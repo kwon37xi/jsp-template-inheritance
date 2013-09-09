@@ -1,0 +1,8 @@
+apply plugin: 'war'
+
+dependencies {
+    compile project(':jsp-inheritance')
+
+    compile 'javax.servlet:jstl:1.1.2'
+    compile 'taglibs:standard:1.1.2'
+}
