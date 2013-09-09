@@ -15,6 +15,9 @@ subprojects {
     apply plugin: 'propdeps-idea'
     apply plugin: 'propdeps-eclipse'
 
+    ext {
+        javaVersion = '1.6'
+    }
     repositories {
         mavenCentral()
     }
@@ -22,5 +25,9 @@ subprojects {
     dependencies {
         testCompile "junit:junit:4.11"
     }
-}
 
+    sourceCompatibility = javaVersion
+    targetCompatibility = javaVersion
+
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+}
