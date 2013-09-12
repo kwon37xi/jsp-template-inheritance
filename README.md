@@ -98,7 +98,7 @@ Refer to `index.jsp`, `WEB-INF/layouts/base.jsp`, `WEB-INF/layouts/secondLayout.
 
 ## Known problems
 
-1. If you want to pass a variable from a child page to the layout page, the variable must be added to **REQUEST scope**.
+1. If you want to pass a variable from a child page to it's layout page, the variable must be added to **REQUEST scope**.
 
 ## Reference
 
