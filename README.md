@@ -96,6 +96,10 @@ dependencies {
 `example` module is web application layout example. Run the module and browse <http://localhost:8080/index.jsp>.
 Refer to `index.jsp`, `WEB-INF/layouts/base.jsp`, `WEB-INF/layouts/secondLayout.jsp`.
 
+## Known problems
+
+1. If you want to pass a variable from a child page to the layout page, the variable must be added to **REQUEST scope**.
+
 ## Reference
 
 1. [freemarker-template-inheritance](https://github.com/kwon37xi/freemarker-template-inheritance)
