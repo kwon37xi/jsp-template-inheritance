@@ -71,7 +71,7 @@ dependencies {
 ```jsp
 <%@page contentType="text/html; charset=UTF-8" %>
 <%@ taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout"%>
-<layout:extends name="layout.jsp">
+<layout:extends name="base.jsp">
     <layout:put name="header" type="REPLACE">
         <h2>This is an example about layout management with JSP Template Inheritance</h2>
     </layout:put>
