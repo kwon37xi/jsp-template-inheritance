@@ -5,11 +5,11 @@ import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.io.IOException;
 
-import static kr.pe.kwonnam.jsp.inheritance.BlockTagUtils.getBlockContentsAttributeName;
-import static kr.pe.kwonnam.jsp.inheritance.BlockTagUtils.getBlockTypeAttributeName;
-import static kr.pe.kwonnam.jsp.inheritance.BlockTagUtils.getBodyResult;
+import static kr.pe.kwonnam.jsp.inheritance.BlockTagUtils.*;
 
 /**
+ * 레이아웃의 블럭으로 대체되어 들어갈 템플릿을 지정하는 태그.
+ *
  * Author: KwonNam Son(kwon37xi@gmail.com)
  */
 public class PutTag extends SimpleTagSupport {

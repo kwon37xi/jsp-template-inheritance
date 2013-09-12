@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.Writer;
 
 /**
+ * 블럭에 대체되어 들어가는 타입
+
  * Author: KwonNam Son(kwon37xi@gmail.com)
  */
 public enum PutType {

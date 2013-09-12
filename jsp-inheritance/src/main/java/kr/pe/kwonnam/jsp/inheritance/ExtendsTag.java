@@ -1,16 +1,15 @@
 package kr.pe.kwonnam.jsp.inheritance;
 
 import javax.servlet.ServletException;
-import javax.servlet.jsp.JspContext;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.PageContext;
-import javax.servlet.jsp.tagext.JspFragment;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.io.IOException;
 import java.io.StringWriter;
-import java.io.Writer;
 
 /**
+ * 상속할 레이아웃을 지정하는 태그
+ *
  * Author: KwonNam Son(kwon37xi@gmail.com)
  */
 public class ExtendsTag extends SimpleTagSupport {
