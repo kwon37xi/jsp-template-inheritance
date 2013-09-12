@@ -9,13 +9,11 @@ If you use freemarker, refer to [freemarker-template-inheritance](https://github
 
 ## Settings
 
+* [Maven repository setting.](https://github.com/kwon37xi/m2repos)
+
 ### Gradle settings
 
 ```groovy
-repositories {
-    maven { url 'https://raw.github.com/kwon37xi/m2repos/master/releases' }
-}
-
 dependencies {
     compile 'kr.pe.kwonnam.jsp:jsp-inheritance:0.1'
 }
@@ -30,13 +28,6 @@ dependencies {
     <version>0.1</version>
     <scope>compile</scope>
 </dependency>
-
-<repositories>
-    <repository>
-        <id>kwon37xi-github-m2-repos</id>
-        <url>https://raw.github.com/kwon37xi/m2repos/master/releases</url>
-    </repository>
-</repositories>
 ```
 
 ## Usage
