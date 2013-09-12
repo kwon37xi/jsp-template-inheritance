@@ -94,7 +94,7 @@ dependencies {
 
 ### Example
 `example` module is web application layout example. Run the module and browse <http://localhost:8080/index.jsp>.
-Look at `index.jsp`, `WEB-INF/layouts/base.jsp`, `WEB-INF/layouts/secondLayout.jsp`.
+Refer to `index.jsp`, `WEB-INF/layouts/base.jsp`, `WEB-INF/layouts/secondLayout.jsp`.
 
 ## Reference
 
