@@ -1,7 +1,7 @@
 apply plugin: 'maven'
 
 group = 'kr.pe.kwonnam.jsp'
-version = '0.1'
+version = '0.2'
 
 dependencies {
     provided 'javax.servlet:servlet-api:2.5'
