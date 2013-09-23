@@ -31,8 +31,22 @@ dependencies {
 ```
 
 ## Usage
+### web.xml
+```xml
+<!-- jsp-inheritance-prefix, jsp-inheritance-suffix can be omitted.-->
 
-### base.jsp : layout
+<context-param>
+    <param-name>jsp-inheritance-prefix</param-name>
+    <param-value>/WEB-INF/layouts/</param-value>
+</context-param>
+
+<context-param>
+    <param-name>jsp-inheritance-suffix</param-name>
+    <param-value>.jsp</param-value>
+</context-param>
+```
+
+### /WEB-INF/layouts/base.jsp : layout
 
 ```jsp
 <%@page contentType="text/html; charset=UTF-8" %>
@@ -71,7 +85,7 @@ dependencies {
 ```jsp
 <%@page contentType="text/html; charset=UTF-8" %>
 <%@ taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout"%>
-<layout:extends name="base.jsp">
+<layout:extends name="base">
     <layout:put block="header" type="REPLACE">
         <h2>This is an example about layout management with JSP Template Inheritance</h2>
     </layout:put>
@@ -93,6 +107,16 @@ dependencies {
 1. REPLACE : The put contents will replace block's contents. The block's contents will be removed.
 
 PutType vlaues are case insensitive.
+
+### Layout path prefix/suffix
+
+In web.xml you can set `jsp-inheritance-prefix` and `jsp-inheritance-suffix` context parameters.
+The layout name will be prefixed and suffixed with these parameters.
+
+When you set `jsp-inheritance-prefix` as `/WEB-INF/layouts/`, `jsp-ineheritance-suffix` as
+`.jsp` and call `<layout:extends name='base'>` the layout file URL will be `/WEB-INF/layouts/base.jsp`.
+
+The prefix and suffix can be omitted.
 
 ### Example
 `example` module is web application layout example. Run the module and browse <http://localhost:8080/index.jsp>.

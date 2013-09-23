@@ -6,7 +6,8 @@ version = '0.1'
 dependencies {
     provided 'javax.servlet:servlet-api:2.5'
     provided 'javax.servlet.jsp:jsp-api:2.1'
-    testCompile "junit:junit:4.11"
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.mockito:mockito-all:1.9.5'
 }
 
 uploadArchives {

@@ -2,7 +2,7 @@
 <%@taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <div>This contents will be ignored because of forward.</div>
-<layout:extends name="/WEB-INF/layouts/secondLayout.jsp">
+<layout:extends name="secondLayout">
     <c:set var="testProperty" value="test property must be shown from the grand son" scope="request"/>
 
     <layout:put block="header">

@@ -5,6 +5,16 @@
     <session-config>  <!--  10 minutes -->
         <session-timeout>10</session-timeout>
     </session-config>
+    
+    <context-param>
+        <param-name>jsp-inheritance-prefix</param-name>
+        <param-value>/WEB-INF/layouts/</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>jsp-inheritance-suffix</param-name>
+        <param-value>.jsp</param-value>
+    </context-param>
 
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
