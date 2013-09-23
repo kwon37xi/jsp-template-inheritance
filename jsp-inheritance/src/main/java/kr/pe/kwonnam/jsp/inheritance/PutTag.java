@@ -52,7 +52,7 @@ public class PutTag extends SimpleTagSupport {
         PutType putType = null;
 
         if (type != null) {
-            putType = PutType.valueOf(type);
+            putType = PutType.valueOf(type.toUpperCase());
         }
         if (putType == null) {
             putType = PutType.APPEND;

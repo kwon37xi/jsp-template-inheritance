@@ -92,6 +92,8 @@ dependencies {
 1. PREPEND : The put contents will be prepended before block's contents.
 1. REPLACE : The put contents will replace block's contents. The block's contents will be removed.
 
+PutType vlaues are case insensitive.
+
 ### Example
 `example` module is web application layout example. Run the module and browse <http://localhost:8080/index.jsp>.
 Refer to `index.jsp`, `WEB-INF/layouts/base.jsp`, `WEB-INF/layouts/secondLayout.jsp`.

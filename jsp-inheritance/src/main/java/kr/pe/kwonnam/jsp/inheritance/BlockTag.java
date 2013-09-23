@@ -13,6 +13,8 @@ import static kr.pe.kwonnam.jsp.inheritance.BlockTagUtils.*;
  * Author: KwonNam Son(kwon37xi@gmail.com)
  */
 public class BlockTag extends SimpleTagSupport {
+    public static final PutType DEFAULT_PUT_TYPE = PutType.APPEND;
+
     /** Block name **/
     private String name;
 
@@ -35,7 +37,7 @@ public class BlockTag extends SimpleTagSupport {
     private PutType getPutType(PageContext pageContext) {
         PutType putType = (PutType) pageContext.findAttribute(getBlockTypeAttributeName(name));
         if (putType == null) {
-            return PutType.APPEND;
+            return DEFAULT_PUT_TYPE;
         }
         return putType;
     }
