@@ -15,7 +15,7 @@ If you use freemarker, refer to [freemarker-template-inheritance](https://github
 
 ```groovy
 dependencies {
-    compile 'kr.pe.kwonnam.jsp:jsp-inheritance:0.1'
+    compile 'kr.pe.kwonnam.jsp:jsp-inheritance:0.2'
 }
 ```
 
@@ -25,7 +25,7 @@ dependencies {
 <dependency>
     <groupId>kr.pe.kwonnam.jsp</groupId>
     <artifactId>jsp-inheritance</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
     <scope>compile</scope>
 </dependency>
 ```
