@@ -35,7 +35,7 @@
         <tag-class>kr.pe.kwonnam.jsp.inheritance.PutTag</tag-class>
         <body-content>scriptless</body-content>
         <attribute>
-            <name>name</name>
+            <name>block</name>
             <description>block name to put</description>
             <required>true</required>
             <rtexprvalue>true</rtexprvalue>

@@ -14,15 +14,13 @@ import static kr.pe.kwonnam.jsp.inheritance.BlockTagUtils.*;
  */
 public class PutTag extends SimpleTagSupport {
     public static final String PUT_DATA_PREFIX = PutTag.class.getCanonicalName() + ".";
-    public static final String PUT_BLOCK_NAME_PARAMETER = "block";
-    public static final String PUT_TYPE_PARAMETER = "type";
 
-    private String name;
+    private String block;
 
     private String type;
 
-    public void setName(String name) {
-        this.name = name;
+    public void setBlock(String block) {
+        this.block = block;
     }
 
     public void setType(String type) {
@@ -37,8 +35,8 @@ public class PutTag extends SimpleTagSupport {
 
         PageContext pageContext = (PageContext)getJspContext();
 
-        pageContext.setAttribute(getBlockContentsAttributeName(name), bodyResult, PageContext.REQUEST_SCOPE);
-        pageContext.setAttribute(getBlockTypeAttributeName(name), putType, PageContext.REQUEST_SCOPE);
+        pageContext.setAttribute(getBlockContentsAttributeName(block), bodyResult, PageContext.REQUEST_SCOPE);
+        pageContext.setAttribute(getBlockTypeAttributeName(block), putType, PageContext.REQUEST_SCOPE);
     }
 
     private void verifyParent() {
@@ -55,7 +53,7 @@ public class PutTag extends SimpleTagSupport {
             putType = PutType.valueOf(type.toUpperCase());
         }
         if (putType == null) {
-            putType = PutType.APPEND;
+            putType = BlockTag.DEFAULT_PUT_TYPE;
         }
 
         return putType;

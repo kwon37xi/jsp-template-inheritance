@@ -1,11 +1,7 @@
 apply plugin: 'war'
 
-repositories {
-    maven { url 'https://raw.github.com/kwon37xi/m2repos/master/releases' }
-}
-
 dependencies {
-    compile 'kr.pe.kwonnam.jsp:jsp-inheritance:0.1'
+    compile project(':jsp-inheritance')
 
     compile 'javax.servlet:jstl:1.1.2'
     compile 'taglibs:standard:1.1.2'
