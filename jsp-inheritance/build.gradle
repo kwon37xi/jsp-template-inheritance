@@ -1,7 +1,7 @@
 apply plugin: 'maven'
 
 group = 'kr.pe.kwonnam.jsp'
-version = '0.2'
+version = '0.3-SNAPSHOT'
 
 dependencies {
     provided 'javax.servlet:servlet-api:2.5'
@@ -13,7 +13,7 @@ dependencies {
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: "file://localost/tmp/m2repos/releases")
+            repository(url: "file://localhost/tmp/m2repos/releases")
             pom.artifactId = 'jsp-inheritance'
             pom.project {
                 licenses {
@@ -39,7 +39,7 @@ task sourcesJar(type: Jar, dependsOn: classes) {
     from sourceSets.main.allSource
 }
 
-task javadocJar(type: Jar, dependesOn: javadoc) {
+task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
 }

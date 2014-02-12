@@ -3,8 +3,18 @@ buildscript {
         maven { url 'http://repo.springsource.org/plugins-release' }
     }
     dependencies {
-        classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.4'
+        classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.5'
     }
+}
+
+ext {
+    javaVersion = '1.6'
+}
+
+allprojects {
+    apply plugin: 'idea'
+
+    languageLevel = javaVersion
 }
 
 subprojects {
@@ -15,9 +25,6 @@ subprojects {
     apply plugin: 'propdeps-idea'
     apply plugin: 'propdeps-eclipse'
 
-    ext {
-        javaVersion = '1.6'
-    }
     repositories {
         mavenCentral()
     }
