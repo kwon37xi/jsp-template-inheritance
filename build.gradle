@@ -1,24 +1,31 @@
+/* Use gradlew idea */
+
 buildscript {
     repositories {
         maven { url 'http://repo.springsource.org/plugins-release' }
     }
     dependencies {
-        classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.5'
+        classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.6'
     }
 }
+
+apply plugin: 'idea'
 
 ext {
     javaVersion = '1.6'
 }
 
-allprojects {
-    apply plugin: 'idea'
 
-    languageLevel = javaVersion
+idea {
+    project {
+        jdkName = javaVersion
+        languageLevel = javaVersion
+    }
 }
 
 subprojects {
     apply plugin: 'java'
+    apply plugin: 'idea'
 
     apply plugin: 'propdeps'
     apply plugin: 'propdeps-maven'
@@ -28,6 +35,9 @@ subprojects {
     repositories {
         mavenCentral()
     }
+
+    group = 'kr.pe.kwonnam.jsp'
+    version = '0.3.RELEASE'
 
     dependencies {
         testCompile "junit:junit:4.11"

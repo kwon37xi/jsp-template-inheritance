@@ -7,25 +7,23 @@ You don't need to use layout frameworks like [Sitemesh](http://wiki.sitemesh.org
 
 If you use freemarker, refer to [freemarker-template-inheritance](https://github.com/kwon37xi/freemarker-template-inheritance).
 
-## Settings
+From 0.3.RELEASE, you can download this library from the maven central repository.
 
-* [Maven repository setting.](https://github.com/kwon37xi/m2repos)
-
-### Gradle settings
+### Gradle dependencies
 
 ```groovy
 dependencies {
-    compile 'kr.pe.kwonnam.jsp:jsp-inheritance:0.2'
+    compile 'kr.pe.kwonnam.jsp:jsp-template-inheritance:0.3.RELEASE'
 }
 ```
 
-### Maven settings
+### Maven dependencies
 
 ```xml
 <dependency>
     <groupId>kr.pe.kwonnam.jsp</groupId>
-    <artifactId>jsp-inheritance</artifactId>
-    <version>0.2</version>
+    <artifactId>jsp-template-inheritance</artifactId>
+    <version>0.3.RELEASE</version>
     <scope>compile</scope>
 </dependency>
 ```
