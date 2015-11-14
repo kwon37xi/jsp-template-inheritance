@@ -1,4 +1,4 @@
-# JSP Template Inheritanc.kr.pe.kwonnam.jsp
+# JSP Template Inheritance
 [![kr.pe.kwonnam.jspMaven Central](https://maven-badges.herokuapp.com/maven-central/kr.pe.kwonnam.jsp/jsp-template-inheritance/badge.svg)](https://maven-badges.herokuapp.com/maven-central/kr.pe.kwonnam.jsp/jsp-template-inheritance)
 
 With these template inheritance tag library you can manage template layouts.
