@@ -124,6 +124,16 @@ Refer to `index.jsp`, `WEB-INF/layouts/base.jsp`, `WEB-INF/layouts/secondLayout.
 
 1. If you want to pass a variable from a child page to it's layout page, the variable must be added to **REQUEST scope**.
 
+## Project Development
+### Intellij
+```
+./gradlew cleanIdea idea
+```
+### Eclipse
+```
+./gradlew cleanEclipse eclipse
+```
+
 ## Reference
 
 1. [freemarker-template-inheritance](https://github.com/kwon37xi/freemarker-template-inheritance)
